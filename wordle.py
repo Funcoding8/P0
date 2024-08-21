@@ -2,11 +2,20 @@
 word ="books"
 
 # TASK B: Define a function 'makeAGuess()' that passes in a users guess as a parameter
-
+def makeAGuess(guess):
 
   # TASK C:Define a variable 'hint' that holds an empty string
- 
+  hint=""
+  for i in range(5):
+    if guess[i] == world[i]:
+      hint.add["G"]
+    elif guess[i]== world:
+      hint.add["Y"]
+    else:
+      hint.add["B"]
+  retrun(hing)
 
+  print(makeAGuess("books"))
   # TASK D: Build a loop that loops from 0 to the length of word
   
 
