@@ -1,12 +1,21 @@
 # TASK A: Define a variable 'word' that holds the correct word for the wordle game
-
+word ="books"
 
 # TASK B: Define a function 'makeAGuess()' that passes in a users guess as a parameter
-
+def makeAGuess(guess):
 
   # TASK C:Define a variable 'hint' that holds an empty string
- 
+  hint=""
+  for i in range(5):
+    if guess[i] == word[i]:
+      hint.add["G"]
+    elif guess[i]== word:
+      hint.add["Y"]
+    else:
+      hint.add["-"]
+  retrun(hing)
 
+  print(makeAGuess("books"))
   # TASK D: Build a loop that loops from 0 to the length of word
   
 
@@ -26,6 +35,16 @@ print("Let's play wordle! /n Guess the Wordle in 6 tries. Each guess must be a v
 
 # TASK I: Build a loop that loops 6 times (representing the number of guesses a user has)
 
+i = 1
+while i < 6:
+  guess = input("guess a 5 letter word")
+  hint = makeAGuess(guess)
+  print(hint)
+  if hint == "GGGGG":
+    print("You win")
+    break 
+  if hint !="GGGGG":
+    print("You lost The word was",word)
 
   # TASK J: Define a variable 'guess'. prompt the user for their 5-letter guess and store it in the variable
 
