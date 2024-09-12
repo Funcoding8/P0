@@ -14,5 +14,11 @@ class item:
         elif self.name == "shield":
             player.defense += self.point
             print(f"You used the {self.name} and gained {self.point} defense.")
+        elif self.name == "joker":
+            print(f"You used the Joker card. It can mimic any other item's effect!")
+            # Add specific Joker card functionality here
         else:
             print(f"You don't have a {self.name} to use.")
+
+# Add Joker card
+joker_card = item("joker", "A wild card that can mimic any other item's effect", 0)
